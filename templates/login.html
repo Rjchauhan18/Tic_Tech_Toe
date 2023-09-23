@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static%}
 <!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
    <head>
@@ -8,7 +9,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    </head>
    <body>
-    <div class="bg-img" style="background: url('/Tic_Tech_Toe/static/photos/farmback.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="bg-img" style="background: url('static/photos/farmback.jpg'); background-size: cover; background-position: center;"></div>
       <div class="bg-img">
          <div class="content">
             <header>Login</header>
@@ -32,7 +33,7 @@
             
             <div class="signup">
                Don't have account?
-               <a href="#">Signup Now</a>
+               <a href="{% url 'signup' %}">Signup Now</a>
             </div>
          </div>
       </div>

@@ -1,0 +1,91 @@
+/* Reset default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: rgb(232 167 159);
+    /* position: sticky; */
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #00bcd4; /* Change the color on hover */
+}
+
+.login{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: green;
+
+}
+
+/* Add some styles for the content to demonstrate the sticky effect */
+.content {
+    padding: 20px;
+    height: 120px; /* Add enough content to make scrolling necessary */
+}
+
+
+/* Reset default styles */
+
+
+/* Style the footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-content li {
+    margin-right: 20px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
