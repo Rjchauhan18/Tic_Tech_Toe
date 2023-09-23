@@ -45,16 +45,10 @@ body, ul {
 .login{
     display: flex;
     position: absolute;
-<<<<<<< HEAD
     right: 0;
     top: 40px;
     background-color: green;
 
-=======
-    right: 3%;
-    top: 35px;
-    
->>>>>>> 6ea8e7bf782c6a326c5dc79832237d3321ba433c
 }
 
 /* Add some styles for the content to demonstrate the sticky effect */
