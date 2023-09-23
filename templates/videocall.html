@@ -37,7 +37,7 @@ window.onload = function () {
     const appID = 1483601343;
     const serverSecret = "a4422ffc4428a87e08aefc86a625562c";
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomID, userID, userName);
-
+    // http://0.0.0.0:8000/videocall/?roomID=1655
     
         const zp = ZegoUIKitPrebuilt.create(kitToken);
         zp.joinRoom({
@@ -64,6 +64,7 @@ window.onload = function () {
          
             });
 }
+
 </script>
 
 </html>
