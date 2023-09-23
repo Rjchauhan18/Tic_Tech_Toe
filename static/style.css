@@ -6,12 +6,21 @@ body, ul {
 }
 
 /* Style the navigation bar */
+
 .navbar {
-    background-color: rgb(232 167 159);
-    /* position: sticky; */
+   
+    background-color: rgb(56 238 27);
+    display: flex;
+    position: fixed; 
+   
+    height: 90px;
     top: 0;
+    cursor: pointer;
+    width:100%;
+    min-height: fit-content;
     z-index: 100;
 }
+
 
 .navbar ul {
     padding: 0;
@@ -36,9 +45,9 @@ body, ul {
 .login{
     display: flex;
     position: absolute;
-    right: 0;
-        top: 40px;
-
+    right: 3%;
+    top: 35px;
+    
 }
 
 /* Add some styles for the content to demonstrate the sticky effect */
@@ -56,6 +65,7 @@ body, ul {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    
 }
 
 .footer-content {
