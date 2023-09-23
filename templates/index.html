@@ -1,0 +1,755 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agrimp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    
+
+    <link rel="shortcut icon" type="image/png" href="/assets/icons/favicon_agrimp_16x16-986d6d73f9ab89558b7379fa749eb28229b23db4aeec5f861a6af1aa356f4d48.png" sizes="16x16" />
+    <link rel="shortcut icon" type="image/png" href="/assets/icons/favicon_agrimp_32x32-89dc80b426326123d70e22d6bcc0e8aa005a40a9639a212348f014e03b325b4b.png" sizes="32x32" />
+    <link rel="shortcut icon" type="image/png" href="/assets/icons/favicon_agrimp_96x96-a883d9f52c549a527bc9c464e9eaa0ea8ad978cbb60c5af0d9b463997de71148.png" sizes="96x96" />
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="DcwcEnnrO+r6yR0VeWk3MN49lgw7ySRpWfgcGIYq0RR0O6Us3IO+FsI271CTK/0uh2VspEbiLg5z2LO8cIbe9w==" />
+    <!-- Facebook Open Graph data -->
+<meta property="og:title" content="Agri Marketplace - Fairtrade made easy" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://agrimp.com" />
+<meta property="og:image" content="https://agrimp-prod.s3.amazonaws.com/public/AgriMP_Social_Banner.png" />
+<meta property="og:description" content="A b2b digital marketplace where fair food trade is made easy, fast and transparent!"
+<meta property="og:site_name" content="Agri Marketplace - Fairtrade made easy" />
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@AgriMarketplace">
+<meta name="twitter:title" content="Agri Marketplace - Fairtrade made easy">
+<meta name="twitter:description" content="A b2b digital marketplace where fair food trade is made easy, fast and transparent!"
+<meta name="twitter:creator" content="@AgriMarketplace">
+<meta name="twitter:image:src" content="https://agrimp-prod.s3.amazonaws.com/public/AgriMP_Social_Banner.png">
+
+
+    <link rel="stylesheet" media="all" href="/assets/application-47b389be11b663b10bb2b92a398a55052ceb26b9e71ec91737a8ae74098372fe.css" data-turbolinks-track="reload" />
+    <script src="/assets/application-66210119be3cc9e5d06b1bda02166a92b4cb1572faf17b095f0eee2c40e9261b.js" data-turbolinks-track="reload"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+      <script src="https://www.googletagmanager.com/gtag/js?id=UA-107910564-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-107910564-1' );
+        </script>
+      <!-- Google Tag Manager -->
+      <script>
+          (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({
+                  'gtm.start':
+                      new Date().getTime(), event: 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0],
+                  j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src =
+                  'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-PTXT9LJ');
+      </script>
+      <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTXT9LJ"
+              height="0" width="0" style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar-expand-md navbar-static-top">
+  <div class="header-navbar-top">
+    <div class="container">
+      <div class="float-left">
+        <div class="dropdown heaver-navbar-top__language">
+          <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Language (EN)
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="/en/home/index">
+              <img width="20" alt="GB" src="/assets/country-4x3/gb-35fdfc7082940f7268a27b2c8a2a4e3861cb88a780b3341419180cb2856aadf2.svg" />
+              English (EN)
+            </a>
+            <a class="dropdown-item" href="/pt/home/index">
+              <img width="20" alt="#{locale}" src="/assets/country-4x3/pt-d8f246ae139c60bade9fbe1047ce9c5e668be01c3b6d445fc87fbd0a328d2760.svg" />
+              Portuguese (PT)
+            </a>
+            <a class="dropdown-item" href="/es/home/index">
+              <img width="20" alt="#{locale}" src="/assets/country-4x3/es-4c2d01e3cfe896cbcaa0edaf59cb79eacf48f7bd1b463c2ba667cff864479a60.svg" />
+              Spanish (ES)
+            </a>
+            <a class="dropdown-item" href="/fr/home/index">
+              <img width="20" alt="#{locale}" src="/assets/country-4x3/fr-9dc10f74431a42978154d1f4e5709d5713eb3010e3dab1b4355def41f5cb2f40.svg" />
+              French (FR)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="float-right text-right">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+          &#9776;
+        </button>
+        <div class="navbar-collapse collapse" id="exCollapsingNavbar2">
+          <ul class="nav navbar-nav">
+            <li class="nav-item mr-2">
+
+              <a class="btn btn-solid btn-sm mt-1" style="width: 100px" href="/users/sign_in">Login</a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="btn btn-solid btn-sm mt-1" style="width: 100px" href="/users/sign_up">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-navbar-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 img-logo-div p-0">
+          <img class="img-logo" src="/logo.jpg"  alt="logo" />
+          <img class="img-logoname" src="/logoname.png"  alt="logoname" />
+        </div>
+        <div class="col-sm-12 col-md-8 navbar-items-div p-0">
+          <ul class="nav navbar-nav float-sm-right flex-row">
+            <li class="nav-item"><a class="nav-link" id="/" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" id="/commodities" href="/commodities">Market</a></li>
+            <li class="nav-item"><a class="nav-link" id="/tools" href="/tools">Crop Converter</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle">About us</a>
+              <ul class="dropdown-menu about-us">
+                <li class="dropdown-item"><a class="dropdown-item" id="/our-company" href="/our-company">Our company</a></li>
+                <li class="dropdown-item"><a class="dropdown-item" id="/about-us" href="/about-us">Our people</a></li>
+                <li class="dropdown-item"><a class="dropdown-item" id="/faq" href="/faq"><span class="translation_missing" title="translation missing: en.layouts.header.FAQ">Faq</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+
+      <div class="container-banner">
+        <div _ngcontent-serverapp-c101="" class="container"><div _ngcontent-serverapp-c101="" class="inner-banner"><div _ngcontent-serverapp-c101="" class="left-side-image-celb"><img _ngcontent-serverapp-c101="" alt="Archana Puran Singh" src="sir.png" height="410" width="320"></div><div _ngcontent-serverapp-c101="" class="right-side-content"><p _ngcontent-serverapp-c101=""> <span _ngcontent-serverapp-c101="" class="unbold-class"></p><!----><!----><h1 _ngcontent-serverapp-c101="">Chat With Experts</h1><a _ngcontent-serverapp-c101="" class="btn-contact-astrologer" href="/chat-with-astrologer"> Chat Now </a></div></div></div>
+
+          <section _ngcontent-serverapp-c101="" class="new_banner_2">
+            <div _ngcontent-serverapp-c101="" class="container">
+               <div _ngcontent-serverapp-c101="" class="astrolger_services">
+                  <div _ngcontent-serverapp-c101="" class="row">
+                     <div _ngcontent-serverapp-c101="" class="col-3 mbile_vrsn">
+                        <a _ngcontent-serverapp-c101="" class="box_item" href="/chat-with-astrologer">
+                           <div _ngcontent-serverapp-c101="" class="icon"><span _ngcontent-serverapp-c101="" class="icons_separate_image chat_with_astrologer_icon"></span></div>
+                           <div _ngcontent-serverapp-c101="" class="text"><span _ngcontent-serverapp-c101="">Chat with Experts</span></div>
+                        </a>
+                     </div>
+                     <div _ngcontent-serverapp-c101="" class="col-3 mbile_vrsn">
+                        <a _ngcontent-serverapp-c101="" class="box_item" href="/talk-to-astrologer">
+                           <div _ngcontent-serverapp-c101="" class="icon"><span _ngcontent-serverapp-c101="" class="bi bi-telephone"></span></div>
+                           <div _ngcontent-serverapp-c101="" class="text"><span _ngcontent-serverapp-c101="">Talk to Experts</span></div>
+                        </a>
+                     </div>
+                     <div _ngcontent-serverapp-c101="" class="col-3 mbile_vrsn">
+                        <a _ngcontent-serverapp-c101="" class="box_item" href="/shop">
+                           <div _ngcontent-serverapp-c101="" class="icon"><span _ngcontent-serverapp-c101="" class="icons_separate_image astromall-position-icon"></span></div>
+                           <div _ngcontent-serverapp-c101="" class="text"><span _ngcontent-serverapp-c101="">Live video call</span></div>
+                        </a>
+                     </div>
+                     <div _ngcontent-serverapp-c101="" class="col-3 mbile_vrsn">
+                        <a _ngcontent-serverapp-c101="" href="https://astrotalk.com/astrology-blog/category/english" class="box_item">
+                           <div _ngcontent-serverapp-c101="" class="icon"><span _ngcontent-serverapp-c101="" class="icons_separate_image blog_position_icon"></span></div>
+                           <div _ngcontent-serverapp-c101="" class="text"><span _ngcontent-serverapp-c101=""></span></div>
+                        </a>
+                        <!----><!----><!---->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+<div class="container-fluid container-families d-block d-md-none">
+  <p class="text-center right__title">Select a product to buy/sell</p>
+
+<div class="row">
+  <div class="container-banner__families mx-auto">
+      <div class="container-banner__family">
+        <a href="/commodities?options=1">
+          <div class="circle-white">
+            <img class="product__img" src="https://agrimp-prod.s3.eu-central-1.amazonaws.com/store/786d4fafae0d05be446f8777d717dcc7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJWG275EEAJRI5EDQ%2F20230923%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20230923T044718Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4367db8c7ace5ca855e83610386b599753fdbcaef669cd67b742f9d01a656ef2" alt="786d4fafae0d05be446f8777d717dcc7" />
+          </div>
+          <p class="product__text">Grains </p>
+</a>      </div>
+      <div class="container-banner__family">
+        <a href="/commodities?options=2">
+          <div class="circle-white">
+            <img class="product__img" src="https://agrimp-prod.s3.eu-central-1.amazonaws.com/store/3381c880c95e5690ddb81c7b8d12eae4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJWG275EEAJRI5EDQ%2F20230923%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20230923T044718Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=59e3974916a0826654ccd89e187a73a0c804ed340f09ad226273eef2819404a1" alt="3381c880c95e5690ddb81c7b8d12eae4" />
+          </div>
+          <p class="product__text">Nuts </p>
+</a>      </div>
+      <div class="container-banner__family">
+        <a href="/commodities?options=3">
+          <div class="circle-white">
+            <img class="product__img" src="https://agrimp-prod.s3.eu-central-1.amazonaws.com/store/d48f6971502cf70138d938cd80cbea9a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJWG275EEAJRI5EDQ%2F20230923%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20230923T044718Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=8125d20119d3c86907b724b522d859c31a4996622c23041e6c4f0f210d1828ce" alt="D48f6971502cf70138d938cd80cbea9a" />
+          </div>
+          <p class="product__text">Green Coffee </p>
+</a>      </div>
+      <div class="container-banner__family">
+        <a href="/commodities?options=5">
+          <div class="circle-white">
+            <img class="product__img" src="https://agrimp-prod.s3.eu-central-1.amazonaws.com/store/b06c0c8d2abf53da897c36716ebaccf6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJWG275EEAJRI5EDQ%2F20230923%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20230923T044718Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=aa8eb1eef54a5a7d271ebd1fc1c1cb40613e0d90454a577109de1760286d5bd1" alt="B06c0c8d2abf53da897c36716ebaccf6" />
+          </div>
+          <p class="product__text">Olive Oil &amp; Other Oils </p>
+</a>      </div>
+  </div>
+</div>
+
+<div style="margin-top: 44px;">
+  <div class="container-banner-talk-us-label">Can&#39;t find the Product you are looking for?</div>
+  <button id="contactUs" class="btn btn-talk-to-us">Talk to us</button>
+</div>
+</div>
+
+<div class="container-solution">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 solution_header">
+        <h1>Our <span class="green">solution</span></h1>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-12">
+        <p class="solution_p1">Agri Marketplace is a digital B2B market solution that brings together Farmers and Industrial Buyers.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-6 center">
+        <img class="img_venn_diagram" src="/assets/solution/venn_diagram-86237fd7d36cf102e842a7e327e490137502292585d150a47faa520bc8980db1.png" alt="Venn diagram" />
+      </div>
+      <div class="col-md-12 col-lg-6 right">
+        <p class="solution_p2">We drive agricultural transactions through our digital platform in combination with our service partnership network. Agri Marketplace accommodates online payments between buyer and seller, product quality check options, and end-to-end logistic services.</p>
+        <p class="solution_p3">Agri Marketplace does not buy or sell crops and is not a broker. Instead, we offer you the ability to effortlessly market your crop via our platform.</p>
+        <div class="row solution_button_row">
+          <div class="col-sm-12 col-md-6 mt-3">
+            <a class="btn" href="/commodities">Explore the marketplace</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mt-3">
+            <a class="btn" href="/our-company">Learn more about us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12 col-lg-6 left">
+        <ul>
+            <li><span>A user-friendly platform that generates market opportunity for farmers and industry buyers.</span></li>
+            <li><span>Unlimited access to a global market from anywhere, at anytime.</span></li>
+            <li><span>Transparent and reliable market information, deal creation and negotiation.</span></li>
+            <li><span>Integrated and secure platform payment processes.</span></li>
+            <li><span>Tailored product quality verification and logistic services.</span></li>
+            <li><span>A market with only verified buyers and sellers.</span></li>
+            <li><span>Customer support &amp; insight.</span></li>
+        </ul>
+      </div>
+      <div class="col-md-12 col-lg-6 right mt-0">
+        <div class="resp-container">
+          <iframe class="resp-iframe" src="https://www.youtube.com/embed/FAvIa27RcyU?rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-value">
+  <div class="container">
+      <h1>
+        Our <span class="green">value</span> proposition
+      </h1>
+      <p>Agri Marketplace accommodates direct transactions between buyers and sellers. All intermediate supply chain stages are covered by Agri MP and our partnership network. See our premium partners for more information.</p>
+    <video width="80%" playsinline="true" autoplay="autoplay" muted="muted" loop="loop" type="video/mp4" src="https://agrimp-prod.s3.amazonaws.com/public/OVP_Video.mp4"></video>
+  </div>
+</div>
+
+
+<div class="container-how-it-works">
+  <div class="container">
+        <div class="col-md-12 col-lg-6 left">
+          <h1><span class="green">How</span> it works</h1>
+          <h2>Take a look at our <span class="green">platform demo</span>.</h2>
+          <ul>
+              <li type="1">Sign-up to the platform</li>
+              <li type="1">Create your offer or bid</li>
+              <li type="1">Set a quantity &amp; price</li>
+              <li type="1">Provide us with crop characteristics &amp; details</li>
+              <li type="1">Decide upon your preferred incoterm</li>
+              <li type="1">Decide upon logistic and/or crop quality check services</li>
+              <li type="1">Post your seller offer or buyer bid</li>
+              <li type="1">Stay updated by email or notification centre</li>
+          </ul>
+        </div>
+        <div class="col-md-12 col-lg-6 right" id="video_div">
+          <video id="video" playsinline="true" autoplay="autoplay" muted="muted" loop="loop" type="video/mp4" src="http://agrimp-prod.s3.amazonaws.com/public/AgriMarketPlace_howitworks_demo.mov"></video>
+        </div>
+  </div>
+</div>
+
+<div class="container-get-started">
+    <div class="container">
+        <h1>Get Started</h1>
+        <p>We open the door to thousands of approved buyers and sellers. Post your crop bid as a registered buyer, or create your crop offer as a platform verified seller. Through our rigorous customer compliance we make sure that only reliable users gain access to our digital marketplace. There are two ways to get started:</p>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h2>Post offer as a seller</h2>
+                <p style="min-height:150px">As a seller, post offers for the agricultural crop you are looking to sell, and gain immediate access to credit-verified buyers. Or simply react to an existing buyer’s bid and start your transaction.</p>
+                <div class="row get-started-btn">
+                    <div class="col-sm-12 col-md-6 left">
+                        <a class="btn" href="/users/sign_up">Register as a seller</a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 right">
+                        <a id="modal-btn-selling" class="btn" data-toggle="modal" data-target="#modal-selling" data-src="https://www.youtube.com/embed/7Mt0bSOwIIE?&amp;autoplay=1&amp;rel=0">
+                            Selling offer video
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h2>Post bid as a buyer</h2>
+                <p style="min-height:150px">As a buyer, post bids for the agricultural crop you are looking to buy. Communicate to the market what you are looking for, and get rapid reactions from interested farmers or sellers.</p>
+                <div class="row get-started-btn">
+                    <div class="col-sm-12 col-md-6 left">
+                        <a class="btn" href="/users/sign_up">Register as a buyer</a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 right">
+                        <a id="modal-btn-buying" class="btn" data-toggle="modal" data-target="#modal-buying" data-src="https://www.youtube.com/embed/9D5ciJ0FuHo?&amp;autoplay=1&amp;rel=0">
+                            Buying bid video
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SELLING VIDEO MODAL -->
+        <div class="modal fade" id="modal-selling" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="overflow-y: hidden;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe id="modal-video-selling" src="" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BUYING VIDEO MODAL -->
+        <div class="modal fade" id="modal-buying" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="overflow-y: hidden;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe id="modal-video-buying" src="" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-services">
+  <div class="container">
+    <h1>Our <span class="green">Services</span></h1>
+    <p>Agri marketplace provides all of the following services through internal operations <br>in combination with our specialised partnership network.</p>
+    <img src="/assets/services/Services_agrimp_en_crop-acab5e797bfeca134d05ff6fed2212e5f6a2b2a361a0b8066bec262d6e27f7c5.png" alt="Services agrimp en crop" />
+  </div>
+</div>
+
+<div class="container-six">
+  <div class="container">
+    <h1><span class="green">Premium</span> Partners</h1>
+    <div class="row text-center">
+      <div class="col-sm-6 col-md-3 div-partners">
+        <a href="http://www.sgs.com/en/agriculture-food/commodities?wt.mc_id=Alr17061" target="_blank">
+          <img class="premium-img" src="/assets/icons/SGS_RGB-c25f8eb959d5d7a6e9305c2e41bdac125bbe4b0cf2e8744906509a660b795761.png" alt="Sgs rgb" />
+          <p class="container-six__text" style="padding-bottom: 0;">SGS</p>
+          <p class="container-six__subtitle">Quality Certification</p>
+          <p class="container-six__text">Premium Partner</p>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-3 div-partners">
+        <a href="http://www.orey-shipping.com/" target="_blank">
+          <img class="premium-img" src="/assets/icons/orey_xl-88832221b3fe6994a6541cd6a74988033e4a3a42348f9d35fc76f0162095d72e.png" alt="Orey xl" />
+          <p class="container-six__text" style="padding-bottom: 0;">Orey Shipping</p>
+          <p class="container-six__subtitle">Logistics &amp; Transportation</p>
+          <p class="container-six__text">Premium Partner</p>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-3 div-partners">
+        <a href="https://www.cca.law/pt/" target="_blank">
+          <img class="premium-img cca-logo" src="/assets/logos/CCA Law Firm_Logo_RGB-88d4acde468555ab2262997e5e0f97bcf1299f12404654ff9cbd2d5ae86e9c68.png" alt="Cca law firm logo rgb" />
+          <p class="container-six__text" style="padding-bottom: 0;">CCA Law Firm</p>
+          <p class="container-six__subtitle">Legal Services</p>
+          <p class="container-six__text">Premium Partner</p>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-3 div-partners">
+        <a href="https://mangopay.com/" target="_blank">
+          <img class="premium-img" src="/assets/icons/mangopay-44b2c1d6981deec6b7bd31e93adc3ae117c47284369737f52208aaa2a953c8cd.png" alt="Mangopay" />
+          <p class="container-six__text" style="padding-bottom: 0;">Mangopay</p>
+          <p class="container-six__subtitle">Payments</p>
+          <p class="container-six__text">Premium Partner</p>
+        </a>
+      </div>
+    </div>
+    <div class="row mx-auto text-center container-six__button">
+      <div class="col-sm-12 col-md-6 offset-md-3">
+        <a class="btn" target="_blank" href="/cdn-cgi/l/email-protection#6d04030b022d0c0a1f04001d430e0200521e180f07080e19502f084d02181f4d1d0c1f1903081f524d424d3c18081f4d1e081f4d03021e1e024d3d0c1f0e08041f0252">
+          Become a partner
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-pricing">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 left">
+                <h1>Pricing</h1>
+                <p>Both buyer and seller pay a small fee to Agri Marketplace once a transaction is made. We price transparently and keep you updated through all steps of the process. Our pricing is based on your transaction’s value &amp; volume</p>
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/icons/grain_bag_en-35a97c53a2457418423528885a62a4c2d52f0427241fa798c2f80432caf10b99.png" alt="Grain bag en" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-features">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center">KEY <green>FEATURES</green></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center features-text">Discover how Agri Marketplace can benefit you and all other food supply chain actors.</p>
+      </div>
+    </div>
+    <div class="row text-center features-row">
+      <div class="col-md-3 col__adv">
+        <div class="container--img">
+          <img class="img--base" src="/assets/flowcharts/oval-34100b9a6862e2b2bc37d7f9fd45c66f87e172b249eafc56dd83f822fa282d6d.png" alt="Oval" />
+          <img class="img--top" src="/assets/flowcharts/transparency-22c9e5d80505d72e6f7d60580801572f3c431ac6018d4b4099a42212da8c36c0.png" alt="Transparency" />
+        </div>
+        <p class="container-features__subtitle">Transparency</p>
+        <p class="container-features__text">Direct transactions between farmers and industry/retail</p>
+      </div>
+      <div class="col-md-3 col__adv">
+        <div class="container--img">
+          <img class="img--base" src="/assets/flowcharts/oval-34100b9a6862e2b2bc37d7f9fd45c66f87e172b249eafc56dd83f822fa282d6d.png" alt="Oval" />
+          <img class="img--top" src="/assets/flowcharts/fairtrade-6f557826462666cbfa5b8d3c411224993cdc7a506cd31ed6d243eb05bbc8bb96.png" alt="Fairtrade" />
+        </div>
+        <p class="container-features__subtitle">Fairtrade</p>
+        <p class="container-features__text">Redistribution of value in food supply chain</p>
+      </div>
+      <div class="col-md-3 col__adv">
+        <div class="container--img">
+          <img class="img--base" src="/assets/flowcharts/oval-34100b9a6862e2b2bc37d7f9fd45c66f87e172b249eafc56dd83f822fa282d6d.png" alt="Oval" />
+          <img class="img--top" src="/assets/flowcharts/userfriendly-62cf507c1c2ba82b4435688baca08b1fbc89796f803b09aefcbeb88a0b042773.png" alt="Userfriendly" />
+        </div>
+        <p class="container-features__subtitle"><span class="translation_missing" title="translation missing: en.home.index.features.user_friendly">User Friendly</span></p>
+        <p class="container-features__text">Reduce costs to buyers without losing reliability</p>
+      </div>
+      <div class="col-md-3 col__adv">
+        <div class="container--img">
+          <img class="img--base" src="/assets/flowcharts/oval-34100b9a6862e2b2bc37d7f9fd45c66f87e172b249eafc56dd83f822fa282d6d.png" alt="Oval" />
+          <img class="img--top" src="/assets/flowcharts/food_traceability-93d797d1b2749edf1b55836c3ae17f807503aa5ebe44a34b21cb0b4a17aa0e64.png" alt="Food traceability" />
+        </div>
+        <p class="container-features__subtitle">Food Traceability</p>
+        <p class="container-features__text">Crop reliability through supply chain traceability<br>(coming soon)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-awards">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center">Awards</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card col-lg-2 col-md-3 col-6 text-center">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/web_summit_2016-d18ffcc3bd456ccf85af392de4adcfa92e83795fff688aadf144870e1d1d9fb0.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Web Summit 2016</h6>
+        <p class="card-text mb-3">Alpha Startup Exhibitor</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/web_summit_2017-4a78c9994820607588973c1dcce4b01b4be79ccff0557ffd7395717ac556bfd9.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Web Summit 2017</h6>
+        <p class="card-text mb-3">Beta Startup Exhibitor</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/greentech_challenge-7f50211a78d55710b7bd0854ef07fe79a2904c9502cc6b278cdcd9994bcb7ccf.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Green Tech Challenge Lisbon 2017</h6>
+        <p class="card-text mb-3">1 out of 17 startups selected</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/agri_innovation_summit-fbf435e2625accf56f0e5e21865e68399a081d7325d33af082f69d9e7088c863.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Agri Innovation Summit Challenge Lisbon 2017</h6>
+        <p class="card-text mb-3">Startup Exhibitor</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/techtour_2017-16c030717bbfa2eb49c9f4671ec7af149e8ea9be66941e7e7089518ecbdeb5c6.jpg" />
+        </div>
+        <h6 class="text-success mt-3">European Food Venture Forum 2017 at Aarhus</h6>
+        <p class="card-text mb-3">Top 2017 Presenting Startup<br>(1 out of 30)</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/crop_up-a1ae8527d5f5d4a3e634144e781ad969d0ceba1b5f42b07c163b00e2be1d7517.jpg" />
+        </div>
+        <h6 class="text-success mt-3">CropUp Accelerator Program 2017/2018</h6>
+        <p class="card-text mb-3">Acceleration Program</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/smart_agrifood_lisbon-06dfc15f997ec5484fe3755d68c44900544150dcfc675943e1117684f5405301.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Smart AgriFood Summit Lisbon 2018</h6>
+        <p class="card-text mb-3">Pre-round Pitch Contest Startup Selected</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/smart_agrifood_malaga-35126080166b6d7c5ec302e1a2827dd28f29effcf07e754468c09010323c3301.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Smart AgriFood Summit Málaga 2018</h6>
+        <p class="card-text mb-3">Final Pitch contest Startup selected</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/dit_business_awards-1ebbe16c5d0a0fb632c4e3289ca3b1910eb8437baffee1f944f70c864ee5a25e.jpg" />
+        </div>
+        <h6 class="text-success mt-3">UK Agritech Ecosystem at UK Embassy</h6>
+        <p class="card-text mb-3">Pitch presentation</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/fundacao_luso_americana-d5a7668d3eccde824249fc458bb7186e9164f707ef6ad13ee54f54a784c123ce.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Flad Agtech Program 2018</h6>
+        <p class="card-text mb-3">Selected for roadshow in California, USA</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/mc_masschallenge-92466d61ee58fc4f84d12f2419fe270c7466957cb0175755e7b2a7659746e526.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Mass Challege EIT Food 2018 Acceleration Program</h6>
+        <p class="card-text mb-3">1 out of 40 startups selected from 1000+ applications</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/eit_food-73decfc96d327ccaca1a51bedc810153ac0edd437f46d61e35412f42c09613a6.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Mass Challenge EIT Food 2018 Acceleration Program</h6>
+        <p class="card-text mb-3">1 of the 3 startups winners of EIT Food Acceleration Program</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/smart_agrifood_malaga-35126080166b6d7c5ec302e1a2827dd28f29effcf07e754468c09010323c3301.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Smart AgriFood Summit Málaga 2019</h6>
+        <p class="card-text mb-3">Winners:best startup best innovative smart-food startup </p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/fruit_logistica-0c3459400b302e4b414e200dc7eeed148db708c59a87ad143395c2f8af10518c.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Fruit Logistica 2019 Berlin</h6>
+        <p class="card-text mb-3">Startup Exhibitor and Pitch presentation</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/svg_ventures-241c0aefa11dca70d2579eb6c09059cf09c81633c4cc8748bec328d0fc635457.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Thrive X Challenge 2019</h6>
+        <p class="card-text mb-3">Europe Winner with Thrive SGV Ventures</p>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-6 text-center fade-in d-none d-md-block">
+        <div class="card-body d-flex align-items-center" style="min-height: 110px;">
+          <img class="img__awards" alt="Avatar" src="/assets/awards/boston_global_immersion-562eb29a56333267939f2904112b441db2810bb57142d1972a706be5942105f7.jpg" />
+        </div>
+        <h6 class="text-success mt-3">Boston Global Immersion 2019</h6>
+        <p class="card-text mb-3">Selected Startup by BGI</p>
+      </div>
+    </div>
+    <div class="col-12 mt-3 d-block d-sm-none">
+      <a class="btn btn-block slide_awards">
+        <span id="show-more-awards-text">Show more</span>
+        <span id="show-less-awards-text">Show less</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<section class="container-testimonials testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center">What <green>People Say</green></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center testimonial-text">Discover how Agri Marketplace can benefit you and all other food supply chain actors.</p>
+      </div>
+    </div>
+    <div class="owl-carousel testimonials-carousel">
+      <div class="testimonial-wrap">
+        <div class="testimonial-item">
+          <img class="testimonial-img" src="/assets/testimonials/logo-central-cervejas-d226bfe6525d43fa20df26f32eb69e21170a773a444ea336b09f1fc28e9c8d42.jpg" alt="Logo central cervejas" />
+          <h3>Vasco Correia</h3>
+          <h4>Procurement Category Manager - Raw Materials & Packaging | Central de Cervejas e Bebidas</h4>
+          <p>
+            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            For a professional linked to the purchase of raw materials, the added value and enthusiasm of the people at Agri Marketplace, has proved to be inexhaustible and crucial for the joint delivery of projects. The ease of the digital solution, linking it to the rural world, proves to be a fundamental pillar of sustainability for small farmers that results in the enthusiasm of large companies, due to the possibility of reaching sites that would not otherwise be possible. The best way to thank is to share more projects, more ideas that will lead to better business and more innovations between companies. Your success is deserved.
+            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-wrap">
+        <div class="testimonial-item">
+          <img class="testimonial-img" src="/assets/testimonials/logo-coopenoix-57531384055fe3159a12554d8e68e7859917deed3052e1d3de145e50681553d3.jpg" alt="Logo coopenoix" />
+          <h3>Christine Bonnet</h3>
+          <h4>Commercial Attaché | Coopenoix</h4>
+          <p>
+            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            Practical to use and very clear platform with a sober but effective design. I recommend.
+            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </div>
+    <footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-2 footer-links">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="https://agrimp.com/" target="_blank">Home</a></li>
+            <li><a href="https://agrimp.com/commodities" target="_blank">Market</a></li>
+            <li><a href="https://agrimp.com/tools" target="_blank">Crop Converter</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 footer-links">
+          <h4>About</h4>
+          <ul>
+            <li><a target="_blank" href="/our-company">Our Company</a></li>
+            <li><a target="_blank" href="/about-us">Our People</a></li>
+            <li><a target="_blank" href="/faq">FAQ&#39;s</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a target="_blank" href="/terms-conditions/agri-marketplace">Terms &amp; Conditions</a></li>
+            <li><a target="_blank" href="/privacy">Privacy Policy</a></li>
+            <li><a target="_blank" href="/cookies-policy">Cookies Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3 footer-contact footer-links">
+          <h4>Contact Us</h4>
+          <p>
+            <img src="/assets/icons/phone_icon-d27d3ccfa4eebf5fa5c7419e3def7d15f0e9f47d59de3179c02dd3d22048a98c.svg" alt="Phone icon" />
+            <a class="strong" href="callto:00351964300963">+351 964 300 963</a>
+            <br>
+            <img src="/assets/icons/mail_icon-4260a55e62b163f2a269cbac2b5f77089abcede1089547cc928bab6785c6902d.svg" alt="Mail icon" />
+            <a href="/cdn-cgi/l/email-protection#7811161e1738191f0a111508561b1715"> <span class="__cf_email__" data-cfemail="3f565159507f5e584d56524f115c5052">[email&#160;protected]</span> </a>
+          </p>
+          <div class="mt-3">
+            <a href="https://www.facebook.com/agrimarketplace" target="_blank" class="facebook">
+              <img class="footer-image" src="/assets/icons/facebook-095327a666a198711f2d886aca1aa54bc94eab123b47eb21143ca6371903c101.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/agri_marketplace/" target="_blank">
+              <img class="footer-image" src="/assets/icons/instagram-9be5bfed286b4ddea96d55630886df1171ce5b0373e678223fb985ba42b2962b.png" alt="Instagram" />
+            </a>
+            <a href="https://www.linkedin.com/company/agri-marketplace/" target="_blank">
+              <img class="footer-image" src="/assets/icons/linkedin-86c3b329b493ce57e613118b55c8ddb281948e9953d386bb4e475ce04c7d24ab.png" alt="Linkedin" />
+            </a>
+            <a href="https://twitter.com/agrimarketplace" target="_blank">
+              <img class="footer-image" src="/assets/icons/twitter-decee6f4cc18e3928008dc9752990a79882421798c13b7a05add80724dcdde7b.png" alt="Twitter" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCXxytegg70uIUAQ0JtYLXhg" target="_blank">
+              <img class="footer-image" src="/assets/icons/youtube-d50ddd3463fca6474d8f6208acfe7fb9b6df4fd0115c7236be8ac898ff2950ec.png" alt="Youtube" />
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+          <p><img class="footer-logo" src="/assets/logos/b-corp-6da44f5989f3afcefcc9940d9551caeecbe37492588053d6d5c439516f2bdc62.png" alt="B corp" /></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom clearfix">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 center">
+          <a target="_blank" href="https://www.eitfood.eu/startups"><img class="footer-eit-food" src="/assets/backgrounds/eit_food_logo-a5fd1c9cb559d0795bacc2c6144253a4aa1748081b5550f25248a5d8c94c9c24.png" alt="Eit food logo" /></a>
+        </div>
+        <div class="col-lg-4 col-md-6 center mt-4 mb-4">
+          <span class="text-secondary">&copy;2023, Agri Marketplace - All rights Reserved</span>
+        </div>
+        <div class="col-lg-4 col-md-12 center">
+          Co-financed by: &nbsp;
+          <a href="/project_files"><img class="footer-cofinanced-bar" src="/assets/backgrounds/barra_cofin_FEDER-7d31a01a485a9c69a10dad3ee8100b663160d3c7148e622e3e20d4e24a6a91f2.jpg" alt="Barra cofin feder" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+        <div class="cookies-eu js-cookies-eu" >
+      <span class="cookies-eu-content-holder">Cookies help us deliver our services. By using our services, you agree to our use of cookies.</span>
+      <span class="cookies-eu-button-holder">
+      <button class="cookies-eu-ok js-cookies-eu-ok"> OK </button>
+        <a href="/cookies-policy" class="cookies-eu-link" target="_blank"> Learn more </a>
+      </span>
+    </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
