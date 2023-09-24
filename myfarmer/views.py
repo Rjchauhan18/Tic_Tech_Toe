@@ -2,10 +2,32 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.contrib import messages
 from myfarmer.models import *
 from myfarmer.EmailBackEnd import EmailBackEnd
-
+from pandas import read_csv
 # Create your views here.
+
 def index(request):
-    return render(request, "index.html")
+    data =  read_csv('static/MOCK_DATA.csv')
+    data = data.to_dict()
+    Name=[x for x in data['Name'].values()]
+    age=[x for x in data['age'].values()]
+    email=[x for x in data['email'].values()]
+    City=[x for x in data['City'].values()]
+    Experience=[x for x in data['Experience'].values()]
+    d={}
+    for i in range(len(Name)):
+        info = {"age":age[i] ,"Email" :email[i], "City" :City[i], "Experience":Experience[i]}
+        d.update({Name[i] : info})
+    print(d)
+    # data={"Name" :Name,"age":age ,"Email" :email, "City" :City, "Experience":Experience}
+    # print(Name)
+    # for d in data :
+    #     for k in data[d]:
+    #         print(k)
+    # print(data.Name)
+        # for d in data:
+
+        #     print(d)
+    return render(request, "index.html",{"data": d })
 
 def book(request):
     return render(request, "book.html")
