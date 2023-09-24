@@ -29,6 +29,9 @@ def index(request):
 def book(request):
     return render(request, "book.html")
 
+def about(request):
+    return render(request, "about.html")
+
 def login(request):
     return render(request, "login.html")
 
