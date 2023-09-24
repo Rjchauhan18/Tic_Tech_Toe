@@ -55,6 +55,9 @@ def dologin(request):
             messages.error(request,'Email and Password Are Invalid !')
             return redirect('login')
         
+def signupFarmer(request):
+    if request.method == "POST":
+        Name = request.POST.get('name')
         
 
 def signup(request):
