@@ -30,7 +30,7 @@ def book(request):
     return render(request, "book.html")
 
 def about(request):
-    return render(request, "about.html")
+    return render(request, "aboutus.html")
 
 def login(request):
     return render(request, "login.html")
