@@ -14,8 +14,8 @@
 `
 ### Technology :
 
-    - Django
-    - Zego Cloud
+    Django
+    Zego Cloud
 
 ### Framework :
     Django
