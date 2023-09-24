@@ -6,6 +6,7 @@ urlpatterns = [
     #about us  section
     path('about/',views.about , name="about"),
     path('faq/',views.faq , name="faq"),
+    path('about/faq/',views.faq , name="faq"),
 
     # farmer section paths
     path('pesticides/',views.pesticides,name="pesticides"),
