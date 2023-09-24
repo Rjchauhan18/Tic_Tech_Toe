@@ -32,6 +32,8 @@ def dologin(request):
         else: 
             messages.error(request,'Email and Password Are Invalid !')
             return redirect('login')
+        
+        
 
 def signup(request):
     return render(request, 'signup.html')

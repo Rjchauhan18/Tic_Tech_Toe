@@ -11,4 +11,9 @@ class customuser(AbstractUser):
       )
     
     user_type = models.CharField(choices=user,max_length=58,default=1)
+    
+class Farmer(models.Model):
+  admin = models.OneToOneField(customuser,on_delete=models.CASCADE)
+  
+
 
