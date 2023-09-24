@@ -32,6 +32,17 @@ def book(request):
 def about(request):
     return render(request, "aboutus.html")
 
+# farmer section
+def pesticides(request):
+    return render(request, "banned_pesticides.html")
+
+
+def cluster(request):
+    return render(request, "clusterdata.html")
+
+def cultivation(request):
+    return render(request, "cultivation_practice.html")
+
 def login(request):
     return render(request, "login.html")
 
