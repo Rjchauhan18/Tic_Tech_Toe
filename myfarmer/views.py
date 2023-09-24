@@ -84,4 +84,16 @@ def signup(request):
     return render(request, 'signup.html')
 
 def farmerhome(request):
-    return render(request,'farmerhome.html')
+    data =  read_csv('static/MOCK_DATA.csv')
+    data = data.to_dict()
+    Name=[x for x in data['Name'].values()]
+    age=[x for x in data['age'].values()]
+    email=[x for x in data['email'].values()]
+    City=[x for x in data['City'].values()]
+    Experience=[x for x in data['Experience'].values()]
+    d={}
+    for i in range(len(Name)):
+        info = {"age":age[i] ,"Email" :email[i], "City" :City[i], "Experience":Experience[i]}
+        d.update({Name[i] : info})
+    
+    return render(request,'farmerhome.html',{"data": d })
