@@ -29,8 +29,14 @@ def index(request):
 def book(request):
     return render(request, "book.html")
 
+
+#about us section 
 def about(request):
     return render(request, "aboutus.html")
+
+def faq(request):
+    return render(request, "faq.html")
+
 
 # farmer section
 def pesticides(request):
