@@ -10,7 +10,6 @@ def index(request):
     if city!=None:
         return redirect("book.html", city=city)
     else:
-       
         data =  read_csv('static/MOCK_DATA.csv')
         data = data.to_dict()
         Name=[x for x in data['Name'].values()]
