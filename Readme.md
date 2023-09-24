@@ -1,4 +1,4 @@
-# Bharatkrishisarthi 
+# [Bharatkrishisarthi ](https://bharatkrishisarthi.onrender.com)
 
 [live website](https://bharatkrishisarthi.onrender.com)
 
@@ -14,18 +14,23 @@
 `
 ### Technology :
 
-    Django
-    Zego Cloud
+>    Django
+>
+>    [Zego Cloud](https://www.zegocloud.com/docs)
 
 ### Framework :
-    Django
-    BOOT STRAP
+>    Django
+>
+>    BOOT STRAP
 
 ### Programming languages :
-    HTML
-    CSS
-    PYTHON
-    JAVASCRIPT
+>    HTML
+>
+>   CSS
+>
+>   PYTHON
+>
+>   JAVASCRIPT
 
 ### Team Members:
 
