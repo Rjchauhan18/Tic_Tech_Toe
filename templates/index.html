@@ -31,17 +31,17 @@
 
               {% comment %} Index page {% endcomment %}
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link active" aria-current="page" href="{% url  'index' %}">Home</a>
               </li>
               
               {% comment %} About US {% endcomment %}
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/about" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="{% url 'about' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   About Us 
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="about/">About Us</a>
-                  <a class="dropdown-item" href="faq/">Faq</a>
+                  <a class="dropdown-item" href="{% url 'about' %}">About Us</a>
+                  <a class="dropdown-item" href="{% url 'faq' %}">Faq</a>
                   
               </li>
 
@@ -51,9 +51,9 @@
                   Farmer 
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="pesticides/">Pesticides</a>
-                  <a class="dropdown-item" href="cluster/">Cluster</a>
-                  <a class="dropdown-item" href="cultivation/">Cultivation</a>
+                  <a class="dropdown-item" href="{% url 'pesticides' %}">Pesticides</a>
+                  <a class="dropdown-item" href="{% url 'cluster' %}">Cluster</a>
+                  <a class="dropdown-item" href="{% url 'cultivation' %}">Cultivation</a>
                 
               </li>
 
